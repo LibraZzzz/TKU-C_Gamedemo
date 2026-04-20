@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Final Exam Project - 踩地雷</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="container">
+    <h1>Final Exam Project - 踩地雷 (Flask + C)</h1>
+    <div class="toolbar">
+      <label for="level">難度</label>
+      <select id="level">
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
+      <button id="new-btn">New Game</button>
+      <span id="status">state: waiting</span>
+      <span id="mines-left">剩餘地雷: -</span>
+    </div>
+    <div id="board" class="board"></div>
+  </main>
+  <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.board {
+  display: grid;
+  width: max-content;
+  gap: 2px;
+  padding: 2px;
+  background: #374151;
+}
+
+.cell {
+  width: 28px;
+  height: 28px;
+  border: 0;
+  cursor: pointer;
+  background: #cbd5e1;
+  font-weight: 700;
+}
+
+.cell.open {
+  background: #e5e7eb;
+  cursor: default;
+}
+
+.cell.mine {
+  background: #ef4444;
+  color: #fff;
+}
