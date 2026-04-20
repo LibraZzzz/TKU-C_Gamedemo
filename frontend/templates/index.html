@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minesweeper Flask x C</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>踩地雷 (Flask x C)</h1>
+
+    <section class="controls">
+      <label>Rows <input id="rows" type="number" min="5" max="30" value="9" /></label>
+      <label>Cols <input id="cols" type="number" min="5" max="30" value="9" /></label>
+      <label>Mines <input id="mines" type="number" min="1" value="10" /></label>
+      <button id="newGame">新局</button>
+    </section>
+
+    <p id="status">按「新局」開始</p>
+    <div id="board"></div>
+  </main>
+
+  <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>

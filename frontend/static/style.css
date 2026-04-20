@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7fb;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.controls input {
+  width: 64px;
+  margin-left: 4px;
+}
+
+#board {
+  display: grid;
+  gap: 2px;
+  width: max-content;
+  background: #333;
+  padding: 2px;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #cbd5e1;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell.revealed {
+  background: #e2e8f0;
+  cursor: default;
+}
+
+.cell.mine {
+  background: #ef4444;
+  color: #fff;
+}
