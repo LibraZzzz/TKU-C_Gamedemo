@@ -1,4 +1,4 @@
-# TKU-C_Gamedemo
+# 踩地雷(試做)
 
 以「Flask (Python) + C 核心 + ctypes 整合」做的踩地雷範例專案。
 
